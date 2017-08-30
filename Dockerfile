@@ -7,7 +7,7 @@ RUN pip3 install -r /requirements.txt
 
 USER jupyter
 ENV HOME /home/jupyter
-COPY notebooks/*.ipynb ${HOME}/notebooks
+COPY notebooks/*.ipynb ${HOME}/notebooks/
 WORKDIR ${HOME}/notebooks
-COPY data/ ${HOME}/notebooks/UGent/BaF3
+COPY data/ ${HOME}/notebooks/
 RUN jupyter nbconvert --ExecutePreprocessor.kernel_name="python3" --to notebook --execute --stdout CMSO_PM.ipynb >/dev/null
