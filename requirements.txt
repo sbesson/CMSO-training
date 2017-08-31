@@ -1,0 +1,9 @@
+datapackage
+isatools
+jsontableschema
+jsontableschema-pandas
+pandas
+seaborn
+tabulator
+xlrd
+biotracks>=0.3.0
